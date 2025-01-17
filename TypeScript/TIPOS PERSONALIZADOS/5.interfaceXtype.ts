@@ -3,6 +3,8 @@
 // 2 interfaces com nomes iguais se uninem como se fossem uma só interface , coisa que com o type nao é possivel
 //type pode renomear e extender tipagens primitivas, coisa que o interface não possibilita
 
+// Escolher uma ou outra é escolha pessoal ou do time.
+
 interface IProduct {
      id: number,
      name: string
