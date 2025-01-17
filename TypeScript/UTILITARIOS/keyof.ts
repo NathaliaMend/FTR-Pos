@@ -1,4 +1,4 @@
-// O keyof serve para extrair as chaves de um objeto e utilizar como tipagem
+// O keyof serve para extrair as chaves de um objeto
 
 const icons = {
     "home" : "./path/home.svg",
