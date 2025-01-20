@@ -1,9 +1,9 @@
 {
   "name": "01-fundamentos-nodejs",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "b-rotas_CriacaoListagem.js", 
   "scripts": {
-    "dev": "node --watch server.js" 
+    "devF": "node --watch b-rotas_CriacaoListagem.js" 
   },
   "keywords": [],
   "author": "",
