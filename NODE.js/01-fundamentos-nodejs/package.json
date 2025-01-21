@@ -1,9 +1,9 @@
 {
   "name": "01-fundamentos-nodejs",
   "version": "1.0.0",
-  "main": "c-salvando_usuariosemMemoria.js", 
+  "main": "d-http_statusCode.js", 
   "scripts": {
-    "devF": "node --watch c-salvando_usuariosemMemoria.js" 
+    "devF": "node --watch d-http_statusCode.js" 
   },
   "keywords": [],
   "author": "",
