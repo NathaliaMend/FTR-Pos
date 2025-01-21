@@ -1,9 +1,9 @@
 {
   "name": "01-fundamentos-nodejs",
   "version": "1.0.0",
-  "main": "b-rotas_CriacaoListagem.js", 
+  "main": "c-salvando_usuariosemMemoria.js", 
   "scripts": {
-    "devF": "node --watch b-rotas_CriacaoListagem.js" 
+    "devF": "node --watch c-salvando_usuariosemMemoria.js" 
   },
   "keywords": [],
   "author": "",
