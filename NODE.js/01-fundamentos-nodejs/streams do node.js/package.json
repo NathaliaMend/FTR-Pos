@@ -1,9 +1,9 @@
 {
-  "name": "02-projeto",
+  "name": "streams-do-node",
   "version": "1.0.0",
-  "main": "server.js",
+  "main": "streams_deLeitura.js",
   "scripts": {
-    "start": "node server.js"
+    "devS": "node --watch streams_deLeitura.js"
   },
   "keywords": [],
   "author": "",
