@@ -1,9 +1,9 @@
 {
   "name": "streams-do-node",
   "version": "1.0.0",
-  "main": "streams_deLeitura.js",
+  "main": "streams_deEscrita.js",
   "scripts": {
-    "devS": "node --watch streams_deLeitura.js"
+    "devS": "node --watch streams_deEscrita.js"
   },
   "keywords": [],
   "author": "",
