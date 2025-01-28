@@ -1,10 +1,9 @@
 {
   "name": "streams-do-node",
   "version": "1.0.0",
-  "main": "streams_http.js",
-  "type": "module" ,
+  "main": "consumindo-uma-stream-completa.js",
   "scripts": {
-    "devS": "node --watch streams_http.js"
+    "devS": "node --watch consumindo-uma-stream-completa.js"
   },
   "keywords": [],
   "author": "",
