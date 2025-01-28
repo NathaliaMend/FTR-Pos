@@ -1,9 +1,10 @@
 {
   "name": "streams-do-node",
   "version": "1.0.0",
-  "main": "streams_deEscrita.js",
+  "main": "streams_http.js",
+  "type": "module" ,
   "scripts": {
-    "devS": "node --watch streams_deEscrita.js"
+    "devS": "node --watch streams_http.js"
   },
   "keywords": [],
   "author": "",
