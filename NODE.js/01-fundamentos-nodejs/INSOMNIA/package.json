@@ -1,0 +1,12 @@
+{
+  "name": "insomnia",
+  "version": "1.0.0",
+  "main": "ignite-node-js-01.js",
+  "scripts": {
+    "devI": "node --watch ignite-node-js-01"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
