@@ -1,6 +1,6 @@
-import { Database } from "./database.js"
 import { randomUUID } from 'node:crypto' //UUID => Unique Universal ID
-import { buildRoutePath } from "./utils/build-route-path.js"
+import { Database } from "./database.js"
+import { buildRoutePath } from './utils/build-route-path.js'
 
 const database = new Database()
 
@@ -11,7 +11,7 @@ export const routes = [
         handler: (res, req) => {
             const users = database.select('users')
 
-            return res.end(JSON.stringify(users))
+         return res.end(JSON.stringify(users))
         }
     },
     {
@@ -31,9 +31,9 @@ export const routes = [
     },
     {
         method: 'DELETE',
-        path: buildRoutePath('/users/:id'),
+        path: buildRoutePath('/users'),
         handler: (res, req) => {
             return res.end()
         }
-    }
+    } 
 ]
