@@ -36,8 +36,11 @@ export const routes = [
             
             const {id} = req.params
             const {name, email} = req.body
-            
-            database.delete('users', id)
+
+            database.update('users', id, {
+                nome,
+                email
+            })
             return res.writeHead(204).end()
         }
     } ,
