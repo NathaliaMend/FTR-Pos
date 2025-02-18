@@ -34,18 +34,16 @@ export class Database {
         this.#persist();
         return data;
     }
-    update(table, id, data) {
+    update(table, id, data ){
         const rowIndex = this.#database[table].findIndex(row => row.id == id)
         if (rowIndex > -1) {
-            console.log('entrou if')
             this.#database[table][rowIndex] = {id, ...data }
             this.#persist()
         }
     }
     delete(table, id) {
         const rowIndex = this.#database[table].findIndex(row => row.id == id) //vê se existe na tabela //procura na db.json um id igual ao que quero deletar, se existir ele retorna o indice(posicao) dessa informacao
-        if (rowIndex > -1) {
-            console.log('entrou if')
+        if (rowIndex > -1) { 
             this.#database[table].splice(rowIndex, 1) //splice remove
             this.#persist() // vai persistir(salvar informacao) somente se encontrado
         }

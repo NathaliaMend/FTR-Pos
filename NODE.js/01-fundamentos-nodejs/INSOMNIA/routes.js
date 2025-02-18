@@ -8,7 +8,7 @@ export const routes = [
     {
         method: 'GET',
         path: buildRoutePath('/users'),
-        handler: (res, req) => {
+        handler: (req, res) => {
             const users = database.select('users')
 
          return res.end(JSON.stringify(users))
@@ -17,7 +17,7 @@ export const routes = [
     {
         method: 'POST',
         path: buildRoutePath('/users'),
-        handler: (res, req) => {
+        handler: (req, res) => {
             const { name, email } = req.body
             const user = {
                 id: randomUUID(),
@@ -38,7 +38,7 @@ export const routes = [
             const {name, email} = req.body
 
             database.update('users', id, {
-                nome,
+                name,
                 email
             })
             return res.writeHead(204).end()
