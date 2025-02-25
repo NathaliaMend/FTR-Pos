@@ -29,7 +29,7 @@ export class Database {
         if (search) {
            data = data.filter(row => {
                 return Object.entries(search).some(([key, value]) => {
-                    return row[key].toLowerCase(includes(value.toLowerCase())) //toLowerCase() para deixar tudo em caixa baixa
+                    return row[key].toLowerCase().includes(value.toLowerCase())
                 })
             })
         }
