@@ -1,12 +1,12 @@
 import fastify from 'fastify'
-import crypto from 'node:crypto'
-import { knex } from './database'
+// import crypto from 'node:crypto'
 import { env } from './env'
+import { transactionsRoutes } from './routes/transactions'
 
 const app = fastify()
 
 // INSERINDO
-app.get('/hello', async () => {
+/* app.get('/hello', async () => {
   const transaction = await knex('transactions')
     .insert({
       id: crypto.randomUUID(),
@@ -17,16 +17,10 @@ app.get('/hello', async () => {
 
   return transaction
 })
-// SELECIONANDO
-/*
-app.get('/hello', async () => {
-  const transaction = await knex('transactions')
-    .where('amount', 1000)
-    .select('*')
+*/
 
-  return transaction
-})
-  */
+// SELECIONANDO
+app.register(transactionsRoutes)
 
 app
   .listen({
