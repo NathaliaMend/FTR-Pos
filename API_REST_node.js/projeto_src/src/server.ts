@@ -20,7 +20,9 @@ const app = fastify()
 */
 
 // SELECIONANDO
-app.register(transactionsRoutes)
+app.register(transactionsRoutes, {
+  prefix: 'transactions',
+})
 
 app
   .listen({
