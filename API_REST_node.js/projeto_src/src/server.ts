@@ -1,9 +1,12 @@
 import fastify from 'fastify'
+import cookie from '@fastify/cookie'
 // import crypto from 'node:crypto'
 import { env } from './env'
 import { transactionsRoutes } from './routes/transactions'
 
 const app = fastify()
+
+app.register(cookie)
 
 // INSERINDO
 /* app.get('/hello', async () => {
