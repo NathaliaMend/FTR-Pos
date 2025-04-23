@@ -3,9 +3,9 @@
 - Unitários
     > Testa uma unidade da aplicação/ Uma pequena parte de forma isolada.
 - Integração
-    > Testa a comunicação entre duas ou mais unidades
+    > Testa a comunicação entre duas ou mais unidades.
 - E2E - Ponta a Ponta
-    > Simula um usuário operando na aplicação
+    > Simula um usuário operando na aplicação.
 
 ### Pirâmidade de testes 
 > [!IMPORTANT]
