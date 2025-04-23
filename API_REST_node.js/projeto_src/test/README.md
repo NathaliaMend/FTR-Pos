@@ -8,7 +8,7 @@
 - E2E - Ponta a Ponta
     > Simula um usuário operando na aplicação.
 
-### Pirâmidade de testes 
+### Pirâmidade de testes:
 > [!IMPORTANT]
 > A E2E não depende de nenhuma tecnologia e nem de arquitetura, porém é extremamente lenta, por isso é performatico utilizar a pirâmide de testes. 
 
