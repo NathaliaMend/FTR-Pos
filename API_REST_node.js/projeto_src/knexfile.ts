@@ -1,3 +1,3 @@
-import { config } from './src/database'
+import { config } from './src/routes/database'
 
 export default config
