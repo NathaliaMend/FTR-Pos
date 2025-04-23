@@ -1,4 +1,5 @@
-## Existem vários tipos de testes, sendo os mais famosos:
+## Testes Automatizados
+### Existem vários tipos de testes, sendo os mais famosos:
 
 - Unitários
     > Testa uma unidade da aplicação/ Uma pequena parte de forma isolada.
