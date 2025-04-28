@@ -16,7 +16,7 @@ import { env } from './env'
 
 app
   .listen({
-    port: env.PORT || 14003,
+    port: env.PORT,
   })
   .then(() => {
     console.log('HTTP Server Running!')
