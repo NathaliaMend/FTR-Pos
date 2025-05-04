@@ -6,7 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  output   = "../generated/prisma"
+  // output   = "../generated/prisma"
 }
 
 datasource db {
@@ -15,15 +15,21 @@ datasource db {
 }
 
 model User {
-  id    String @id @default(uuid())
-  name  String
-  email String @unique
+  id            String   @id @default(uuid())
+  name          String
+  email         String   @unique
+  password_hash String
+  created_at    DateTime @default(now())
 
   @@map("users")
 }
 
 model CheckIn {
-  id String @id @default(uuid())
+  id           String    @id @default(uuid())
+  create_at    DateTime  @default(now())
+  validated_at DateTime?
+
+  @@map("check_ins")
 }
 
 model Gym {
