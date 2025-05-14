@@ -6,7 +6,7 @@
 
 generator client {
   provider = "prisma-client-js"
-  // output   = "../generated/prisma"
+  output   = "../generated/prisma"
 }
 
 datasource db {
@@ -20,14 +20,14 @@ model User {
   email         String    @unique
   password_hash String
   created_at    DateTime  @default(now())
-  checkIns      CheckIn[]
+  checkIns      CheckIn[] //camelcase
 
   @@map("users")
 }
 
 model CheckIn {
   id           String    @id @default(uuid())
-  create_at    DateTime  @default(now())
+  created_at   DateTime  @default(now())
   validated_at DateTime?
 
   user    User   @relation(fields: [user_id], references: [id])
